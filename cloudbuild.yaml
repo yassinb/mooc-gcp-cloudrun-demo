@@ -33,7 +33,7 @@ steps:
       - 'set'
       - 'image'
       - 'deployment/monsiteweb'
-      - 'monsiteweb=europe-west1-docker.pkg.dev/$PROJECT_ID/mooc-containers/mooc-web:$SHORT_SHA'
+      - 'mooc-web-sha256-1=europe-west1-docker.pkg.dev/$PROJECT_ID/mooc-containers/mooc-web:$SHORT_SHA'
 
   # 5. Vérifier le rollout Kubernetes
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
