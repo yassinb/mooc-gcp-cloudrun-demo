@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOOC GCP Cloud App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">MOOC GCP</div>
+    <nav>
+      <a href="#home">Accueil</a>
+      <a href="#about">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <span class="badge">Démo Cloud Run & CI/CD</span>
+      <h1>Déployer une application web sur Google Cloud</h1>
+      <p>
+        Une application simple, conteneurisée avec Nginx, déployée automatiquement
+        avec Cloud Build vers Cloud Run.
+      </p>
+      <a href="#services" class="button">Voir les services utilisés</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>À propos du projet</h2>
+    <p>
+      Ce site sert de fil rouge pour comprendre les étapes d'un déploiement cloud :
+      création d'une image Docker, stockage dans Artifact Registry, automatisation avec
+      Cloud Build et déploiement sur Cloud Run.
+    </p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Services GCP utilisés</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Cloud Build</h3>
+        <p>Automatise la construction de l'image Docker à chaque changement de code.</p>
+      </div>
+      <div class="card">
+        <h3>Artifact Registry</h3>
+        <p>Stocke les images de conteneurs de manière versionnée et centralisée.</p>
+      </div>
+      <div class="card">
+        <h3>Cloud Run</h3>
+        <p>Exécute l'application conteneurisée sans gestion de serveur.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>Cette section simule une page de contact pour rendre la démo plus réaliste.</p>
+    <form>
+      <input type="text" placeholder="Votre nom" />
+      <input type="email" placeholder="Votre email" />
+      <textarea placeholder="Votre message"></textarea>
+      <button type="button">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 MOOC GCP — Application de démonstration</p>
+  </footer>
+
+</body>
+</html>
